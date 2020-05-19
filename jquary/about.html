@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="icon" href="bunker.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  href="css/bootstrap.min.css">
+    <link rel="stylesheet"  href="about.css">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<title>about</title>
+<style>
+	
+    #d0
+  {
+    height:60px;
+    width:70px;
+    background-image: url(bunker.jpeg);
+    border-radius: 50%;
+    margin-left: 50px;
+    align-items: center;
+    background-size: cover;
+  }
+
+  #d1
+  {
+    width: 100%;
+    height: 100%;
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #000428, #004e92);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  float: left;
+
+  }
+  .shadow 
+  {
+    height:45vw;
+    width:70%;
+   background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin-top: 40px;
+    margin-left:14%;
+    float: left;
+  }
+  #d110
+  {
+    height: 5.5vw;
+    width: 25%;
+    
+    background-size: cover;
+    margin-left: 40%;
+  }
+
+  #d11
+  {
+    height:70%;
+    width:35%;
+    margin-top: 8vw;
+    margin-left:10%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.69);
+    border-radius: 10%;
+    float: left;
+    border-bottom: 2vw;
+  }
+  
+  
+  #d111
+  {
+    height:80px;
+    width:80px;  
+    transform: scale(1.3,1.3);
+    transition: 5s;
+    border-radius: 10px;
+    background-image: url(crr.jpg);
+    margin-left: 37%;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  #d112
+  {
+    height: 70%;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgba(243,243,243,0.91);
+  }
+  
+  #d12
+  {
+    height:70%;
+    width:35%;
+    border-radius: 5%;
+    margin-top: 8vw;
+    margin-left:13%;
+    float: left;
+
+  }
+  #d121
+  {
+    height:80px;
+    width:80px;
+    transform: scale(1.3,1.3);
+    transition: 2s;
+    border-radius: 10px;
+    background-image: url(cr2.jpg);
+    margin-left: 37%;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  #d122
+  {
+    height: 70%;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgba(243,243,243,0.91);
+  }
+  
+#navbar 
+{
+  marker-end: 5px;
+}
+h4
+{
+  font-family: 'Abril Fatface', cursive;
+  font-size:26px;
+  color:#4A00E0;
+  text-align: center;
+  
+  
+}
+p{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color:#8E2DE2;
+  font-size: 13px;
+  padding-left: 20px;
+}
+.card-body
+{
+ background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000428, #004e92);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+.card-header
+{
+background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+#df
+{
+  width: 48%;
+  height: 100%;
+  margin-left: 2%;
+}
+#df1
+{
+  width: 48%;
+  height: 100%;
+  margin-left: 2%;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:rgba(243,243,243,0.61) ;
+  color: #000;
+  font-size: 18px;
+  padding: 16px 32px;
+}
+.glow {
+  font-size: 70px;
+  color: #fff;
+ font-family: 'Lobster', cursive;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00CDAC, 0 0 40px ##00CDAC, 0 0 50px #ec38bc, 0 0 60px #ec38bc, 0 0 70px #ec38bc;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+	@media(max-width:700px){
+  h2
+  {
+    padding-left: 10px;
+    font-size: 20px;
+
+  }
+  .container {
+  position: relative;
+  width: 80%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 200px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+  #icon
+  {
+  	height: 75px;
+  	width: 100px;
+  }
+  
+  #d0
+  {
+    width: 0%;
+    height: 0%;
+  }
+  .shadow
+  {
+    height:100%;
+    width:85%;
+    margin-left:7%;
+  }
+  #d1
+  {
+    width: 100%;
+    height: 100%;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+
+  }
+  #d10
+  {
+
+    height:80px;
+    width:80px;
+    background-image: url(bunker.jpeg);
+    border-radius: 50%;
+    margin-left: 40%;
+    margin-top: 18vw;
+    align-items: center;
+    background-size: contain;
+
+  }
+
+  #d110
+  {
+    height: 10vw;
+    width: 30%;
+  }
+  
+  #d11
+  {
+    height: 100%;
+    width:80%;
+    margin-left:9%;
+   
+  }
+  #d111
+  {
+    height:80px;
+    width:80px;
+    background-image: url(crr.jpg);
+    margin-left: 37%;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  #d112
+  {
+    height: 48vw;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgba(243,243,243,0.91);
+  }
+  
+
+
+  #d12
+  {
+    height: 100%;
+    width:80%;
+    margin-left:9%;
+    
+  }
+  #d121
+  {
+    height: 80px;
+    width: 80px;
+    background-image: url(cr2.jpg);
+    margin-left: 37%;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  #d122
+  {
+    height:48vw;
+    width: 100%;
+     background-color: rgba(243,243,243,0.91);
+    
+  }
+  .text {
+  background-color:rgba(243,243,243,0.61) ;
+  color: #000;
+  font-size: 18px;
+  padding: 8px 8px;
+}
+.glow {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+  }
+	</style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #ff06">
+  <div id="d0">
+    
+  </div>
+  <a class ="navbar-brand" href="#">&nbsp; Bunker</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Location </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Offer zone
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Best Offer</a>
+          <a class="dropdown-item" href="#">Combo Pack</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Special Offer</a>
+        </div>
+      </li>
+      <li class="nav-item">
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+
+  <header id="nav-header"> 
+    <nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+
+ <a href="new.html"><button type="button" class="btn btn-outline-primary">Home</button></a>
+ <a href="photo.html"><button type="button" class="btn btn-outline-warning">Contain</button></a>
+<a href="code1.html"><button type="button" class="btn btn-outline-secondary">Code Arena</button></a>
+
+<a href="code.html"><button type="button" class="btn btn-outline-danger">The Spleash</button></a>
+
+<a href="about.html"><button type="button" class="btn btn-outline-success">About</button></a>
+<a href="login.html"><button type="button" class="btn btn-outline-info">Login</button></a>
+</nav>
+
+<div id="d1">
+
+  <div class="shadow p-3 mb-5 bg-white rounded">
+<div id="d110" class="glow">
+    About</font></div>
+
+    
+    <div id="d11" class="shadow-lg p-3 mb-5  rounded">
+      <div id="d111" class="container">
+        
+        <div class="middle">
+    <div class="text">Sagnic Das</div>
+  </div>
+      </div>
+      <div id="d112">
+        <br>
+        <center><h4>Sagnic Das</h4></center>
+        <br>
+       <h5> <p class="text-left" class="text-right" size="+1">
+
+        <b>Age</b> : 19
+        <br>
+        <b>Designation</b> : Computer Science Engineer
+        <br>
+       <b>Study</b> : Persuing B.Tech From Academy Of Technology
+        <br>
+        <b>Work</b> : Android Developer,Web Developer.
+        <br>
+        <br>
+        I also upload my project details on Github For any kind of help follow the link below ..
+        <br>
+        <br>
+        <b>Con.No</b>. 8582907265
+        
+
+    </p></h5>
+      </div>
+    </div>
+
+    <div id="d12" class="shadow-lg p-3 mb-5  rounded">
+      <div id="d121" class="container">
+        
+        <div class="middle">
+    <div class="text">Satyaki Sur</div>
+  </div>
+      </div>
+      <div id="d122">
+        <br>
+        <center><h4>Satyaki Sur</h4></center>
+        <br>
+       <h5> <p class="text-left" class="text-right" size="+1">
+
+        <b>Age</b> : 20
+        <br>
+        <b>Designation</b> : Computer Science Engineer
+        <br>
+       <b>Study</b> : Persuing B.Tech From Academy Of Technology
+        <br>
+        <b>Work</b> : Photo Grapher,Web Developer.
+        <br>
+        <br>
+        I am a full time photographer . Basically fond of clicking abstruct Photos.
+        <br>
+        <br>
+        <b>Con.No</b>. 8582907164
+        
+
+    </p></h5>
+      </div>
+    </div>
+  </div>
+
+<!--<div class="container">
+  <img src=".jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>-->
+  
+
+ </div>
+
+ <div class="card">
+  <div class="card-header">
+    <font size="+2" color="yellow"> <b>The Bunker</b></font>
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <div id="df">
+      <font color="#FFEFBA" size="+0.5" style="bold"> This website may help you to enhance your coding skills and also it provides you 70+ problem sollution in different languages at a time . This also helps you to get different project ideas on Web development and provide you more than 50+ design & if you fond of photography then that page is a great option for you to show your tallent . You may submit your photos on our contact deatails .</font>
+      <font color="#FFEFBA" size="+0.5" style="bold"><footer class="blockquote-footer">On behalf of <b>"The Bunker"</b><cite title="Source Title">    &nbsp; &nbsp;Sagnic Das</cite></footer></font>
+    </div>
+      <div id="df1"></div>
+
+    </blockquote>
+  </div>
+</div>
+	
+
+<script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
