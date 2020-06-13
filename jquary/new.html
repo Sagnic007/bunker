@@ -14,10 +14,119 @@
       <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
-     <script src="script.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script>
+    var names = []; // DO NOT REMOVE
+  </script>
+
+   <!--  <script src="script.js"></script>
+     <script src="SpeakHello.js"></script>
+  <script src="SpeakGoodBye.js"></script>-->
       
 
       <style >
+
+
+  * {box-sizing: border-box;}
+
+
+#slide{
+  width: 100%;
+  height: 47.5vw;
+}
+  footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  text-align: center;
+}
+i{
+  margin-left: 2%;
+}
+#d2
+{
+  width: 95%;
+  margin-left: 2.5%;
+  float: left;
+  height: 100%;
+} 
+
+
+
+.container1 {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0.8;
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  width: 100%;
+  margin-left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container1:hover .image {
+  opacity: 0.3;
+}
+
+.container1:hover .middle {
+  opacity: 1;
+}
+
+.text1 {
+  background-color:black ;
+  color: #fff;
+  font-size: 5vw;
+  padding:10px 10px 10px 10px;
+}
+#d21
+{
+  width: 30%;
+  height: 95%;
+  margin-top: 2.5%;
+  float: left;
+  margin-left: 3%;
+}
+#d22
+{
+  width: 30%;
+  height: 95%;
+  margin-top: 2.5%;
+  float: left;
+  margin-left: 3%;
+}
+#d23
+{
+  width: 30%;
+  height: 95%;
+  margin-top: 2.5%;
+  float: left;
+  margin-left: 3%;
+}
+
+.pgcontainer:hover .overlay {
+  opacity: 1;
+}      
         #d0
   {
     height:60px;
@@ -29,6 +138,10 @@
     align-items: center;
     background-size: cover;
   }
+  input
+  {
+      width: 100px;
+  }
 
 #navbar 
 {
@@ -39,7 +152,14 @@
   font-size: 10px;
   color:crimson;
 }
-
+#contain{
+  height: 100%;
+  width: 17%;
+  background-color: #00FA9A;
+  color: white;
+  padding-left: 4px;
+ 
+}
 
 #d1
 {
@@ -58,9 +178,9 @@ background: linear-gradient(to bottom, #000428, #004e92); /* W3C, IE 10+/ Edge, 
 
 .shadow-lg
 {
-  width: 80%;
-  height: 90%;
-  margin-left: 10%;
+  width: 95%;
+  height: 50vw;
+  margin-left: 2.5%;
   background: #8E2DE2;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #7303c0, #4A00E0);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to top,#7303c0, #4A00E0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -68,52 +188,38 @@ background: linear-gradient(to top,#7303c0, #4A00E0); /* W3C, IE 10+/ Edge, Fire
 margin-top: 40px;
     float: left;
 }
-#d11
-{
-  width: 40%;
-  margin-left: 50px;
-  height: 60%;
-  float: left;
+body {font-family: Arial, Helvetica, sans-serif;}
 
+.image-container {
+  background-image: url("5.jpg");
+  background-size: cover;
+  position: relative;
+  height: 50vw;
 }
-#d2
-{
-  width:3%;
-  height:100%; 
-  float: left;
-  margin-left: 10px;
-}
-#d3
-{
+
+.text {
+  background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  color: #000011;
+
+  font-size: 8vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
   width: 50%;
-  height:100%;
-  float: left;
-  margin-top: 50px;
-  
-}
-#d13
-{
-  width: 100%;
+  opacity: 90%;
   text-align: center;
-  height: 40%;
-  font-family: 
-  color:#ff06;
-  float: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  ;
 }
-#d23
-{
-  width: 100%;
-  height: 40%;
-  font-family: 'Abril Fatface', cursive;
-  text-align: center;
-  margin-top: 69px;
-  float: left;
 
-}
-.container
-{
-  margin-top: 10px;
-}
+
 h2
 {
   font-family: 'Abril Fatface', cursive;
@@ -129,7 +235,17 @@ p{
   color: #F7F8F8;
   padding-left: 20px;
 }
-@media(max-width:700px){
+ 
+#contain{
+  height: 100%;
+  width: 17%;
+  background-color: #00FA9A;
+  color: white;
+  padding-left: 4px;
+ 
+}
+
+@media(max-width:768px){
   h2
   {
     padding-left: 10px;
@@ -141,35 +257,50 @@ p{
   
   font-size: 4vw;
 }
+
+#slide{
+  width: 100%;
+  height: 43vw;
+}
   #d0
   {
     width: 0%;
     height: 0%;
   }
-  #d2
-  {
-    width: 0%;
-    height:0%;
-
-  }
+  
   .shadow-lg
   {
     width: 94%;
     margin-left: 4%;
   }
-  img
+  .form-inline
   {
-    height: 7vw;
-    width: 58vw;
+    float: left;
   }
-  #d11
+  #name
   {
-    margin-left: 7px;
-    width: 45%;
-    height: 70%;
-    margin-top: 25px;
-
+    float: left;
+    margin-left: 2px;
   }
+  .btn btn-outline-success my-2 my-sm-0
+  {
+    float: left;
+  }
+  #contain{
+  height: 100%;
+  width: 30%;
+  background-color: #00FA9A;
+  color: white;
+  float: left;
+  margin-left: 30%;
+  padding-left: 4px;
+ 
+}
+.text
+{
+  font-size: 8vw;
+}
+  
   p
   {
     font-size: 10px;
@@ -182,6 +313,43 @@ p{
   {
     font-size: 30px;
   }
+}
+@media(max-width: 425px ){
+button
+{
+  margin-left:3px;
+  width: 94px;
+  margin-top:12px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 6px;
+}
+.middle {
+  top: 85%;}
+.text{
+  font-size: 8vw;
+}
+#slide{
+  width: 100%;
+  height: 71vw;
+}
+#com{
+  font-size: 12px;
+}
+.shadow-lg
+{
+  width: 95%;
+  height: 80vw;
+  margin-left: 2.5%;
+  background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #7303c0, #4A00E0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top,#7303c0, #4A00E0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+margin-top: 40px;
+    float: left;
+}
+
+
+
 }
 
       </style>
@@ -212,7 +380,7 @@ p{
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Offer zone
+          Contain
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Best Offer</a>
@@ -224,10 +392,11 @@ p{
       <li class="nav-item">
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <p class="form-inline ">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="name">
+      <button class="btn btn-outline-success my-2 my-sm-0" onclick="saybye()"  >Search</button>
+       &nbsp; &nbsp;<div id="contain"> </div>
+    </p>
   </div>
 </nav>
 
@@ -239,56 +408,126 @@ p{
 
  <a href="new.html"><button type="button" class="btn btn-outline-primary">Home</button></a>
  <a href="photo.html"><button type="button" class="btn btn-outline-warning">Contain</button></a>
-<a href="code1.html"><button type="button" class="btn btn-outline-secondary">Code Arena</button></a>
+<a href="code1.html"><button type="button" id="com" class="btn btn-outline-secondary">Code Arena</button></a>
 
-<a href="code.html"><button type="button" class="btn btn-outline-danger">The Spleash</button></a>
+<a href="code.html"><button type="button" class="btn btn-outline-danger">Spleash</button></a>
 
 <a href="about.html"><button type="button" class="btn btn-outline-success">About</button></a>
 <a href="login.html"><button type="button" class="btn btn-outline-info">Login</button></a>
 </nav>
 
 <div id="d1">
-
-  <br>
- <div class="shadow-lg p-3 mb-5 bg-white rounded">
-  
-  <div id="d11" class="shadow p-3 mb-5  rounded">
-    <br>
-  <figure class="figure">
-  <img src="back1.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-  <h3><figcaption class="figure-caption">Dream Big </figcaption></h3>
-</figure>
-</div>
-<div id="d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div id="d3" class="shadow p-3 mb-5  rounded">
-  
-  <div id="d13 ">
-    <br>
-    <h2>The &nbsp;&nbsp;&nbsp;Bunker
-    </h2>
+ <div class="shadow-lg p-3 mb-5 bg-white rounded">   
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" id="slide"  src="12.jpg" alt="First slide" >
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" id="slide" src="13.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" id="slide"  src="14.jpg" alt="Third slide">
+    </div>
   </div>
 
-  <div id="d23  col-lg-4 col-md-6 col-sm-12">
-    
-    <section>
-      <br>
-    <p class="text-left" class="text-right">
-      Hello Everone! That's page basically contain three different parts .The contains are :<br>
-       1) Coding Arena(For Coders and for the beginers)<br>
-       2) The Spleash(For Photographers and photo editors)<br>
-       3) The Abstruct(For Web designer and also for Web Developers)<br>
-       you guys must enjoy study with easy coding options and different language options like a) C Language b) Python etc..
-       and for the photograpy lovers you may  share your photo to our website we share your photo in different platform with your name tag . For the web designer you guys may collect great design idea's from this web page <b>The Bunker</b> 
-    </p>
+  <div class="text">BUNKER</div>
+</div>
+  
+
+ </div>
+<div id="d2" class="shadow-lg p-3 mb-5 bg-white rounded">
+
+ 
+
+<a href="code1.html">
+  <div class="container col-lg-4 col-md-6 col-sm-12">
+    <section class="container1">
+      <img src="tech.jpg" width="100%">
+    <div class="middle">
+      <div class="text1"><font>Code Arena</font></div>
+    </div>
     </section>
+  </div></a>
+  <a href="code.html">
+  <div class="container col-lg-4 col-md-6 col-sm-12">
+    <section>
+    <img src="2.jpg" width="100%">
+    <div class="middle">
+      <div class="text1"> Spleash</div></div>
+    </section>
+  </div></a>
+  <a href="photo.html">
+  <div class="container col-lg-4 col-md-12 col-sm-12">
+    <section>
+    <img src="4.jpg" width="100%">
+    <div class="middle">
+      <div class="text1">The Omega</div>
+    </section>
+  </div></a>
+
+</div>
+</div>
+<!-- Footer -->
+<footer  class="page-footer font-small ">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fa fa-facebook-official" style="font-size:48px ;color:blue"></i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+           <i class="fa fa-twitter-square" style="font-size:48px;color:cyan"></i>
+
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fa fa-whatsapp" style="font-size:48px;color:lightgreen"></i>
+
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fa fa-github" style="font-size:48px;color:white"></i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fa fa-instagram" style="font-size:48px;color:#FCAF45
+"></i>
+
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fa fa-google" style="font-size:48px;color:red"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
 
   </div>
-</div>
+  <!-- Footer Elements -->
 
-</div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://sagnic007.github.io/bunkern/jquary/new.html"><b color="cyan"> Bunker.io</b></a>
+  </div>
+  <!-- Copyright -->
 
-</div>
+</footer>
+<!-- Footer -->
+
+
 
 
 <!-- <script >
@@ -298,5 +537,6 @@ p{
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="script2.js"></script>
   </body>
 </html>

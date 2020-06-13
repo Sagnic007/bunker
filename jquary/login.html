@@ -13,7 +13,23 @@
       <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+i{
+  margin-left: 2%;
+}
+   footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  text-align: center;
+}
 
   #d0
   {
@@ -26,6 +42,14 @@
     align-items: center;
     background-size: cover;
   }
+  #contain{
+  height: 100%;
+  width: 17%;
+  background-color: #00FA9A;
+  color: white;
+  padding-left: 4px;
+ 
+}
   button
 {
   margin-left:60px;
@@ -139,13 +163,36 @@ span.psw {
 }
 
 
-@media(max-width:700px){
+@media(max-width:768px){
   h2
   {
     padding-left: 10px;
     font-size: 20px;
 
   }
+  .form-inline
+  {
+    float: left;
+  }
+  #name
+  {
+    float: left;
+    margin-left: 2px;
+  }
+  .btn btn-outline-success my-2 my-sm-0
+  {
+    float: left;
+  }
+  #contain{
+  height: 100%;
+  width: 30%;
+  background-color: #00FA9A;
+  color: white;
+  float: left;
+  margin-left: 30%;
+  padding-left: 4px;
+ 
+}
   .glow {
   font-size: 40px;
   color: #fff;
@@ -184,6 +231,30 @@ span.psw {
 {
   margin-left: 15px;
 }
+@media(max-width: 425px ){
+button
+{
+  margin-left:3px;
+  width: 94px;
+  margin-top:6px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7px;
+}
+#com{
+  font-size: 12px;
+}
+.glow {
+  font-size: 25px;
+  color: #fff;
+ font-family: 'Lobster', cursive;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+p{
+  font-size: 12px;
+}}
 }
 </style>
 <title>Login Here</title>
@@ -220,10 +291,11 @@ span.psw {
       <li class="nav-item">
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <p class="form-inline ">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="name">
+      <button class="btn btn-outline-success my-2 my-sm-0"  onclick="saybye();">Search</button>
+       &nbsp; &nbsp;<div id="contain"> </div>
+    </p>
   </div>
 </nav>
 
@@ -235,9 +307,9 @@ span.psw {
 
  <a href="new.html"><button type="button" class="btn btn-outline-primary">Home</button></a>
  <a href="photo.html"><button type="button" class="btn btn-outline-warning">Contain</button></a>
-<a href="code1.html"><button type="button" class="btn btn-outline-secondary">Code Arena</button></a>
+<a href="code1.html"><button type="button"id="com" class="btn btn-outline-secondary">Code Arena</button></a>
 
-<a href="code.html"><button type="button" class="btn btn-outline-danger">The Spleash</button></a>
+<a href="code.html"><button type="button" class="btn btn-outline-danger">Spleash</button></a>
 
 <a href="about.html"><button type="button" class="btn btn-outline-success">About</button></a>
 <a href="login.html"><button type="button" class="btn btn-outline-info">Login</button></a>
@@ -275,6 +347,69 @@ span.psw {
 </form>
 </div>
 </div>
+<!-- Footer -->
+<footer  class="page-footer font-small ">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fa fa-facebook-official" style="font-size:48px ;color:blue"></i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+           <i class="fa fa-twitter-square" style="font-size:48px;color:cyan"></i>
+
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fa fa-whatsapp" style="font-size:48px;color:lightgreen"></i>
+
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fa fa-github" style="font-size:48px;color:white"></i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fa fa-instagram" style="font-size:48px;color:#FCAF45
+"></i>
+
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fa fa-google" style="font-size:48px;color:red"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://sagnic007.github.io/bunkern/jquary/new.html"><b color="cyan"> Bunker.io</b></a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+<script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+     <script src="script2.js"></script>
 
 </body>
 </html>
