@@ -19,6 +19,20 @@
       
 <style >
 
+
+  #img{
+    height: 30vw;
+    width: 80%;
+    align-items: center;
+    margin-left: 11%;
+  }
+#img2{
+    height: 30vw;
+    width: 40%;
+    align-items: center;
+    margin-left: 31%;
+  }
+
  footer {
   
   left: 0;
@@ -255,7 +269,7 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
   height:100%;
   margin-left: 5%;
   box-shadow: 5px 5px 5px #0003;
-  background-color: white;
+  background-color: black;
  
 }
 #gradient
@@ -1412,23 +1426,23 @@ Now, let us specify a new value for the width property when a user mouses over t
 </ul>
 <ul>
 <li>At first open any editor
-<div id="photo"><img width="100%" src="editor.jpg"></div></li>
+<div id="photo"><img id="img"width="100%" src="editor.jpg"></div></li>
 
 
 <li>Then click on New to create new file
-<div id="photo"><img width="100%" src="editor2.jpg"></div></li>
+<div id="photo"><img id="img"width="100%" src="editor2.jpg"></div></li>
 
 <li>Set title and then click to save as
-<div id="photo"><img width="100%" src="editor3.jpg"></div></li>
+<div id="photo"><img id="img2" width="100%" src="editor3.jpg"></div></li>
 
 <li>After creating the html file save it with <b><font color="indigo">".html"</font></b> extention name.. 
-<div id="photo"><img width="100%" src="editor3.png"></div></li>
+<div id="photo"><img id="img" width="100%" src="editor1.png"></div></li>
 
-<li>You are ready to go....Start coding.... Follow the process shown below . <b><font color="indigo">".html"</font></b> extention name.. 
-<div id="photo"><img width="100%" src="editor4.png"></div></li>
+<li>You are ready to go....Start coding.... Follow the process shown below . <b><font color="indigo"></font></b>
+<div id="photo"><img  id="img2"width="100%" src="editor4.png"></div></li>
 
-<li>Enter CTRL+S to save the file and open it to browser<b><font color="indigo">".html"</font></b> extention name.. 
-<div id="photo"><img width="100%" src="editor5.png"></div></li>
+<li>Enter CTRL+S to save the file and open it to browser<b><font color="indigo"></font></b>  
+<div id="photo"><img id="img2" width="100%" src="editor5.jpg"></div></li>
 
 
 
@@ -1916,15 +1930,21 @@ Here is an example of a basic, empty canvas:
 
 <br>
 <h5>Differences Between SVG and Canvas</h5>
-<p>SVG is a language for describing 2D graphics in XML.
+<ul>Svg
+<p><li>SVG is a language for describing 2D graphics in XML.
 
-Canvas draws 2D graphics, on the fly (with a JavaScript).
 
-SVG is XML based, which means that every element is available within the SVG DOM. You can attach JavaScript event handlers for an element.
+<li>SVG is XML based, which means that every element is available within the SVG DOM. You can attach JavaScript event handlers for an element.</li>
 
-In SVG, each drawn shape is remembered as an object. If attributes of an SVG object are changed, the browser can automatically re-render the shape.
+<li>In SVG, each drawn shape is remembered as an object. If attributes of an SVG object are changed, the browser can automatically re-render the shape.</li></ul>
 
-Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser. If its position should be changed, the entire scene needs to be redrawn, including any objects that might have been covered by the graphic.</p>
+<ul>Canvas</ul>
+<li>Canvas draws 2D graphics, on the fly (with a JavaScript).</li>
+<li>Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser</li>
+<li>If its position should be changed, the entire scene needs to be redrawn, including any objects that might have been covered by the graphic.
+</li>
+</p>
+
 
 
 
